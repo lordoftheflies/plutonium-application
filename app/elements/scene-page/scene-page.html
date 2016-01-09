@@ -10,6 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/plutonium-hud-minimap/plutonium-hud-minimap.html">
+<link rel="import" href="../../bower_components/plutonium-hud-navigation/plutonium-hud-navigation.html">
 
 <dom-module id="scene-page">
   <template>
@@ -35,7 +37,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
     <div class="hud-container">
+
+
       <div class="view-container">
+        <plutonium-hud-minimap></plutonium-hud-minimap>
         <div class="scene-container">kaka</div>
         <hud-party-view></party-hud-view>
       </div>
@@ -43,19 +48,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
   </template>
   <script>
-    (function() {
-      'use strict';
+    (function () {
+        'use strict';
 
-      Polymer({
-        is: 'scene-page',
-        properties: {
-          foo: {
-            type: String,
-            value: 'scene-page',
-            notify: true
-          }
-        }
-      });
+        Polymer({
+            is: 'scene-page',
+            properties: {
+                foo: {
+                    type: String,
+                    value: 'scene-page',
+                    notify: true
+                }
+            }
+        });
     })();
   </script>
 </dom-module>

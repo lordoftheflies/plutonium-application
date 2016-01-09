@@ -35,6 +35,7 @@
     },
     "party-hud-view": {},
     "iron-pages": {},
+    "plutonium-hud-minimap": {},
     "character-attribute-list-editor": {},
     "dom-module": {
       "attributes": {
