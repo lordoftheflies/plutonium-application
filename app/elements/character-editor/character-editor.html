@@ -1,0 +1,68 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="character-editor">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button.fancy {
+        color: white;
+        background: #B00040;
+      }
+
+      paper-button:hover {
+        background: #D08989;
+      }
+
+    </style>
+
+    <paper-tabs selected="{{selected}}">
+      <paper-tab>Customize</paper-tab>
+      <paper-tab>Attributes</paper-tab>
+      <paper-tab>Skills</paper-tab>
+      <paper-tab>Items</paper-tab>
+    </paper-tabs>
+
+    <iron-pages selected="{{selected}}">
+      <personel-editor></personel-editor>
+      <character-attribute-list-editor></character-attribute-list-editor>
+      <div>Appearance</div>
+      <items-view></items-view>
+    </iron-pages>
+
+    <div class="buttons">
+      <paper-button raised>Cancel</paper-button>
+      <paper-button raised class="fancy">Accept</paper-button>
+    </div>
+
+  </template>
+  <script type="text/javascript">
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'character-editor',
+        properties: {
+          foo: {
+            type: String,
+            value: 'character-editor',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+</dom-module>

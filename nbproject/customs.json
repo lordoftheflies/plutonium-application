@@ -1,0 +1,64 @@
+{
+  "elements": {
+    "template": {
+      "attributes": {
+        "as": {},
+        "is": {},
+        "items": {}
+      }
+    },
+    "paper-dropdown-menu": {
+      "attributes": {
+        "label": {}
+      }
+    },
+    "paper-radio-group": {
+      "attributes": {
+        "selected": {}
+      }
+    },
+    "paper-radio-button": {
+      "attributes": {
+        "name": {}
+      }
+    },
+    "paper-tab": {},
+    "paper-item": {},
+    "hud-party-view": {},
+    "content": {},
+    "div": {},
+    "paper-button": {
+      "attributes": {
+        "raised": {},
+        "class": {}
+      }
+    },
+    "party-hud-view": {},
+    "iron-pages": {},
+    "character-attribute-list-editor": {},
+    "dom-module": {
+      "attributes": {
+        "id": {}
+      }
+    },
+    "style": {},
+    "hud-context-menu-view": {},
+    "paper-input": {
+      "attributes": {
+        "label": {},
+        "id": {},
+        "type": {},
+        "value": {}
+      }
+    },
+    "items-view": {},
+    "paper-tabs": {},
+    "personel-editor": {},
+    "paper-menu": {
+      "attributes": {
+        "class": {}
+      }
+    }
+  },
+  "attributes": {}
+}
